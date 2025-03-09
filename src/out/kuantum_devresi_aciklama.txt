@@ -1,0 +1,82 @@
+
+# Kuantum Devre Şemaları Açıklaması
+
+## 🔎 Kuantum Devresi Nedir?
+Kuantum devresi, klasik bilgisayar devrelerinden farklı olarak kuantum mekaniği prensiplerine göre çalışan bir devredir. 
+Klasik devrelerde bitler (0 ve 1) kullanılırken, kuantum devrelerinde **kübitler** (0, 1 ve süperpozisyon hâli) kullanılır. 
+Bu sayede aynı anda birçok farklı durum üzerinde işlem yapılabilir ve klasik algoritmalara kıyasla daha hızlı çözüm üretilebilir.
+
+---
+
+## 🧠 Grover Algoritması ve Collatz Problemi
+Grover algoritması, belirli bir arama problemini kuantum avantajı ile hızlandırmak için tasarlanmıştır. Bu projede, 
+Collatz probleminin kuantum devresi üzerinde test edilmesi için Grover algoritması kullanılmıştır. 
+
+**Collatz Problemi:**  
+- Başlangıçta pozitif bir tam sayı seçilir:  
+  - **Tek sayı ise** → 3 ile çarpılır ve 1 eklenir.  
+  - **Çift sayı ise** → 2'ye bölünür.  
+  - Bu işlem, sayı **1** olana kadar devam eder.  
+- Collatz hipotezi, her pozitif tam sayının eninde sonunda 1'e ulaşacağını söyler.  
+
+Bu projede ise, kuantum algoritması ile Collatz hipotezine uygun olmayan sayıları test etmek hedeflenmektedir. 
+Kuantum devresi, Grover algoritması aracılığıyla Collatz problemini hızlı bir şekilde test eder ve hipoteze uymayan sayılar olursa tespit eder.
+
+---
+
+## 📌 Görsellerde Neler Var?
+### 1️⃣ İlk Görsel (min.png) → **Başlangıç Devresi**
+- Algoritmanın **ilk durumunu** gösterir.
+- Başlangıç durumunda kübitler süperpozisyon hâline getirilmiştir.  
+- **Görselde yer alan elemanlar:**  
+    - **H (Hadamard) Kapısı** → Kübitleri süperpozisyona sokar (0 ve 1 durumlarını aynı anda alır).  
+    - **X (Pauli-X) Kapısı** → Kübitlerin durumunu tersine çevirir (0 ↔ 1).  
+    - **Kontrol Kapıları (+ işareti)** → İki veya daha fazla kübitin birlikte çalıştığı kontrol mekanizmalarını gösterir.  
+    - **Ölçüm (M)** → Kuantum sistemini ölçerek klasik çıktıya çevirir.  
+
+---
+
+### 2️⃣ İkinci Görsel (max.png) → **Sonuç Devresi**
+- Algoritmanın **son durumunu** gösterir.  
+- Grover iterasyonları tamamlanmıştır.  
+- Algoritma Collatz hipotezine uygun olmayan bir durum bulduysa veya maksimum iterasyon sayısına ulaşıldıysa ölçüm yapar.  
+- **Görseldeki elemanlar:**  
+    - **H (Hadamard) Kapısı** → Kübitlerin süperpozisyon durumunu ayarlar.  
+    - **X (Pauli-X) Kapısı** → Durum ters çevirir.  
+    - **Kontrol Kapıları (+ işareti)** → Birden fazla kübitin etkileşimde olduğunu gösterir.  
+    - **Ölçüm (M)** → Kuantum durumunu ölçüp klasik çıktı olarak verir.  
+
+---
+
+## ⚙️ Algoritma İşleyişi
+1. **Başlangıç Durumu:** Kübitler Hadamard kapısı ile süperpozisyon hâline getirilir.  
+2. **Başlangıç durumuna göre ters işlem** yapılır ve Collatz probleminin şartlarına uygun bir çözüm aranır.  
+3. **Grover iterasyonu** ile algoritma belirli bir hedef durumu bulmaya çalışır.  
+4. **Son durum ölçülür** ve çıkan sonuç olasılık dağılımı olarak gösterilir.  
+5. Eğer hipoteze aykırı bir durum bulunursa, sistem olasılık dağılımını ve devre şemasını kaydeder.  
+
+---
+
+## 📊 Sonuçlar
+1. Eğer **Collatz hipotezine uygun olmayan bir sayı** bulunursa:  
+    - Algoritma, bu durumu aykırı olarak rapor eder.  
+    - Olasılık dağılımı ve devre şeması dosyaya kaydedilir.  
+2. Eğer **hipoteze uygun tüm sayılar** test edilirse:  
+    - Algoritma başarıyla tamamlanır.  
+    - Son durumda olasılık dağılımı gösterilir.  
+
+---
+
+## 🏆 Bu Çalışma Neyi Kanıtlar?
+✅ Kuantum algoritmaları ile klasik bilgisayarların uzun sürede çözemeyeceği problemler çok daha hızlı çözülebilir.  
+✅ Grover algoritması, Collatz problemini test etmek için uygundur ve hipoteze aykırı bir durum bulunursa anında rapor edilir.  
+✅ Kuantum devresi, klasik bilgisayarların işlem süresini kısaltır ve olasılık dağılımı ile problem hakkında fikir verir.  
+
+---
+
+## 🚀 Rapora Nasıl Eklenir?
+1. **Başlangıç Devresi (min.png):** Algoritmanın başlangıç durumunu temsil eder.  
+2. **Son Devre (max.png):** Algoritmanın bitiş durumunu temsil eder.  
+3. **Olasılık Dağılım Grafiği:** Algoritmanın çıktılarını görsel olarak gösterir.  
+4. **Kod Yapısı:** Algoritmanın çalışma mantığı ve kod parçaları açıklanır.  
+5. **Sonuç:** Algoritmanın Collatz hipotezine uygun çalışıp çalışmadığı açıklanır.  

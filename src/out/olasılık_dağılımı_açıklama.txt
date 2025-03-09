@@ -1,0 +1,32 @@
+
+**Collatz Problemi Olasılık Dağılımı Grafiği Açıklaması**
+
+Bu grafik, Collatz Problemi için oluşturulmuş kuantum algoritmasının sonuçlarını görselleştirmektedir. Grafikte, kuantum devresinde yapılan ölçümler sonucunda ortaya çıkan durumların olasılık dağılımları gösterilmektedir.
+
+### 1. **Grafik Başlığı**
+- Grafiğin başlığı: "Collatz Problemi Olasılık Dağılımı"
+    - Bu başlık, çalıştırılan algoritmanın Collatz hipotezini test etmek amacıyla çalıştırıldığını göstermektedir.
+
+### 2. **Yatay Eksen (Durumlar)**
+- Yatay eksen, kuantum devresinde ölçülen ikili (binary) durumları temsil etmektedir.
+    - Kuantum devresi çalıştırıldığında çeşitli ikili kombinasyonlar ortaya çıkar.
+    - Örneğin `101`, `011`, `000` gibi durumlar kuantum ölçüm sonucunda ortaya çıkan spesifik sonuçları temsil eder.
+
+### 3. **Dikey Eksen (Ölçüm Sayısı)**
+- Dikey eksen, her bir durumda kuantum devresi tarafından kaç kez ölçüm yapıldığını temsil eder.
+    - Yüksek sütunlar, belirli durumların kuantum devresi tarafından daha fazla ölçüldüğünü gösterir.
+    - Düşük sütunlar ise ilgili durumların daha az olasılıkla ölçüldüğünü gösterir.
+
+### 4. **Anlamı**
+- Kuantum algoritmasının amacı, Collatz hipotezine uygun olmayan bir sonuç bulmaktır.
+- Yüksek olasılık değerine sahip durumlar, algoritmanın bu durumları daha yüksek olasılıkla çözdüğünü gösterir.
+- Grafikte bazı durumların açıkça diğerlerinden çok daha yüksek olasılıkla ölçüldüğü görülmektedir. Bu, algoritmanın belirli durumları tercih ettiğini ve ölçümler sonucunda farklı olasılıklar ortaya çıktığını gösterir.
+
+### 5. **Belirgin Özellikler**
+- Grafikte açıkça görülen yüksek sütunlar, algoritmanın belirli durumlarda yoğunlaştığını gösterir.
+- Bu durumlar, kuantum algoritmasının Collatz hipotezine uygun veya aykırı olabilecek kritik durumları işaret eder.
+
+### 6. **Sonuç**
+- Eğer algoritma Collatz hipotezine aykırı bir durum bulursa, bu grafikte o durum daha yüksek olasılık ile görünecektir.
+- Olasılık dağılımında aşırı yüksek sütunlar, algoritmanın belirli durumları daha fazla çözmeye çalıştığını ve olası bir hipotez ihlalini işaret edebileceğini gösterir.
+
